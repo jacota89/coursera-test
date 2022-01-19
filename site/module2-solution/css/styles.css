@@ -1,0 +1,93 @@
+/* Desktop */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 18px;
+    font-family: arial;
+    color: black;
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+h1 {
+    font-size: 1.75em;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 3em;
+}
+
+h2 {
+    font-size: 1.25em;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    padding: 5px 20px;
+    margin: 0;
+    border-bottom: solid 4px black;
+    border-left: solid 4px black;
+}
+
+.box {
+    background: gray;
+    width: 30%;
+    float: left;
+    border: solid 4px black;
+    position: relative;
+    margin-left: 2.5%;
+    margin-bottom: 2.5%;
+}
+
+.box p {
+    padding: 50px 15px 15px;
+
+}
+
+.w100 {
+    width: 100%;
+}
+
+.pink {
+    background: #d59898;
+}
+
+.red {
+    background: #c14543;
+    color: white;
+}
+
+.yellow {
+    background: #e5d198;
+}
+
+/* Tablet */
+@media (max-width: 991px) and (min-width: 768px) {
+    .box {
+        width: 42.5%;
+        margin-left: 5%;
+        margin-bottom: 5%;
+    }
+
+    .box:first-child {
+        margin-left: 5%;
+    }
+
+    .box:last-child {
+        width: 90%;
+    }
+
+}
+
+/* Phone */
+@media (max-width: 767px) {
+    .box {
+        width: 90%;
+        margin-left: 5%;
+        margin-bottom: 5%;
+    }
+}
